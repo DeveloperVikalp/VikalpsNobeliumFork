@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+// npo
 import './App.css';
+import Compo from './compo';
 
 function App() {
+  const divStyle ={
+    backgroundColor: "green",
+    fontSize:"150px"
+    
+  }
+
+  const textHe = "compo text "
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={divStyle}>
+      <Compo  ourStyle ={divStyle}text={textHe}/>
+      <h2> heading two</h2>
     </div>
   );
 }
